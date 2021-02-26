@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   min-height:250px;
+  min-width: 400px;
   height: fit-content;
   width: 30%;
   margin: 22px auto;
