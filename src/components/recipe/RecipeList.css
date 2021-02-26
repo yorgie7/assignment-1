@@ -1,12 +1,10 @@
-.App {
-  padding: 16px;
-}
-.double {
+
+.checkbox {
   margin-right: 20px;
   -webkit-transform: scale(2);
 }
 
-.list-item0 {
+.list-item-1 {
   display: flex;
   padding: 0 10px;
   align-items: center;
@@ -15,18 +13,12 @@
   flex-direction: row;
   background-color: white;
 }
-  .list-item0 {
+  .list-item-2 {
     display: flex;
     padding: 0 10px;
     align-items: center;
     height: 40px;
     margin: 0 16px;
     flex-direction: row;
-    background-color: white;
-}
-
-.list-text {
-  color: gray;
-  font-weight: 600;
-  font-size: 16px;
+    background-color: #e6edf7;
 }

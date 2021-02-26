@@ -1,0 +1,52 @@
+.svg{
+
+    margin: 20px auto;
+    max-width: 100%;
+}
+  
+.svg-circle-bg {
+    fill: none;
+}
+  
+.svg-circle {
+    fill: none;
+}
+
+.svg-circle-text-1 {
+    font-size: 20px;
+    text-anchor: middle;
+    fill: red;
+    font-weight: 400;
+}
+
+.svg-circle-text-2 {
+    font-size: 20px;
+    text-anchor: middle;
+    fill:green;
+    font-weight: 400;
+}
+
+.progress-title{
+    font-size: 20px;
+}
+
+.text-recipe-name {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.text-increase-rate {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: green;
+
+}
+
+.text-decrease-rate {
+    margin: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: red;
+}
