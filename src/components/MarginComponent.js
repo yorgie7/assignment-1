@@ -109,24 +109,29 @@ const MarginComponent = () => {
             <p className="text-recipe-name" style={{marginBottom:'33%'}}>
               Ambur Biryany
             </p>
+            <div>
+            <hr style={{width:'100px', border:'1px solid lightgray'}}/>
+            <p className="text-decrease-rate"> 5 % </p>
+          </div>
             
-            <div style={{ margin:'15% 15%', backgroundColor:'lightgray', height:"2px"}} />
-           
-            <p className="text-increase-rate"> 5 % </p>
-
           </div>
 
           <div style={style1}>
             <p className="text-recipe-name">Paneer Tikka Masala</p>
-            {/* <div style={{ margin:'15% 15%', backgroundColor:'lightgray', height:"2px"}} /> */}
-            <hr/>
-            <p className="text-decrease-rate"> 2 % </p>
+            <div>
+            <hr style={{width:'100px', border:'1px solid lightgray'}}/>
+            <p className="text-increase-rate"> 5 % </p>
+          </div>
+         
           </div>
 
           <div style={style1}>
             <p className="text-recipe-name">Palak Paneer Butter Masala</p>
-            <div style={{ margin:'15% 15%', backgroundColor:'lightgray', height:"2px"}} />
+            <div>
+            <hr style={{width:'100px', border:'1px solid lightgray'}}/>
             <p className="text-decrease-rate"> 3 % </p>
+          </div>
+           
           </div>
         </div>
       </MarginBar>

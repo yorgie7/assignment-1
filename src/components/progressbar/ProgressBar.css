@@ -31,13 +31,13 @@
 }
 
 .text-recipe-name {
-    margin: 10px;
+    margin: 1px;
     font-weight: 600;
     font-size: 18px;
 }
 
 .text-increase-rate {
-    margin: 10px;
+    margin: 38px;
     font-weight: 600;
     font-size: 20px;
     color: green;
@@ -45,7 +45,7 @@
 }
 
 .text-decrease-rate {
-    margin: 10px;
+    margin: 38px;
     font-weight: 600;
     font-size: 20px;
     color: red;
