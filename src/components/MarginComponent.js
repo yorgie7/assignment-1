@@ -1,13 +1,15 @@
 import MarginBar from './MarginBar';
 import ProgressBar from './progressbar/ProgressBar';
 import './progressbar/ProgressBar.css';
+import { ReactComponent as ArrowDownIcon } from '../assets/arrow-down.svg';
+import { ReactComponent as ArrowUpIcon } from '../assets/arrow-up.svg';
 
-const style1 ={maxWidth:'33%',
+const style1 ={maxWidth:'32%',
                 display:'flex',
                  flexDirection: 'column',
                   justifyContent:'space-between',
                 alignItems:'center',
-              padding:'20px 0'}
+              padding:'20px 5px'}
 
 const MarginComponent = () => {
   return (
@@ -20,7 +22,7 @@ const MarginComponent = () => {
             <p className="text-recipe-name" style={{marginBottom:'35px'}}>Ambur Biryany</p>
 
             <ProgressBar
-              progress='83'
+              progress={83}
               size={80}
               strokeWidth={4}
               circleOneStroke='#d9edfe'
@@ -33,7 +35,7 @@ const MarginComponent = () => {
             <p className="text-recipe-name">Paneer Tikka Masala</p>
 
             <ProgressBar
-              progress='79'
+              progress={79}
               size={80}
               strokeWidth={4}
               circleOneStroke='#d9edfe'
@@ -46,7 +48,7 @@ const MarginComponent = () => {
             <p className="text-recipe-name">Palak Paneer Butter Masala</p>
 
             <ProgressBar
-              progress='71'
+              progress={71}
               size={80}
               strokeWidth={4}
               circleOneStroke='#d9edfe'
@@ -65,7 +67,7 @@ const MarginComponent = () => {
             <p className="text-recipe-name" style={{marginBottom:'35px'}}>Ambur Biryany</p>
 
             <ProgressBar
-              progress='17'
+              progress={17}
               size={80}
               strokeWidth={4}
               circleOneStroke='#d9edfe'
@@ -77,7 +79,7 @@ const MarginComponent = () => {
             <p className="text-recipe-name">Paneer Tikka Masala</p>
 
             <ProgressBar
-              progress='35'
+              progress={35}
               size={80}
               strokeWidth={4}
               circleOneStroke='#d9edfe'
@@ -91,7 +93,7 @@ const MarginComponent = () => {
             </p>
 
             <ProgressBar
-              progress='17'
+              progress={16}
               size={80}
               strokeWidth={4}
               circleOneStroke='#d9edfe'
@@ -109,9 +111,14 @@ const MarginComponent = () => {
             <p className="text-recipe-name" style={{marginBottom:'33%'}}>
               Ambur Biryany
             </p>
+
             <div>
             <hr style={{width:'100px', border:'1px solid lightgray'}}/>
-            <p className="text-decrease-rate"> 5 % </p>
+
+            <div style={{display:'flex', flexDirection:'row'}}>
+              <p className="text-decrease-rate"> 5 % <ArrowDownIcon/></p>
+       
+          </div>
           </div>
             
           </div>
@@ -120,16 +127,20 @@ const MarginComponent = () => {
             <p className="text-recipe-name">Paneer Tikka Masala</p>
             <div>
             <hr style={{width:'100px', border:'1px solid lightgray'}}/>
-            <p className="text-increase-rate"> 5 % </p>
+            <div style={{display:'flex', flexDirection:'row'}}>
+            <p className="text-increase-rate"> 5 % <ArrowUpIcon /></p>
           </div>
-         
+         </div>
           </div>
 
           <div style={style1}>
             <p className="text-recipe-name">Palak Paneer Butter Masala</p>
             <div>
             <hr style={{width:'100px', border:'1px solid lightgray'}}/>
-            <p className="text-decrease-rate"> 3 % </p>
+            <div style={{display:'flex', flexDirection:'row'}}>
+              <p className="text-decrease-rate"> 3 % <ArrowDownIcon/></p>
+       
+          </div>
           </div>
            
           </div>
