@@ -2,6 +2,12 @@ import MarginBar from './MarginBar';
 import ProgressBar from './progressbar/ProgressBar';
 import './progressbar/ProgressBar.css';
 
+const style1 ={maxWidth:'33%',
+                display:'flex',
+                 flexDirection: 'column',
+                  justifyContent:'space-between',
+                alignItems:'center',
+              padding:'20px 0'}
 
 const MarginComponent = () => {
   return (
@@ -10,7 +16,7 @@ const MarginComponent = () => {
       <MarginBar title="High Margin Recipes" >
 
         <div style={{ display: 'flex', marginLeft: '30px' }}>
-          <div style={{ maxWidth: '33%' }}>
+          <div style={style1}>
             <p className="text-recipe-name" style={{marginBottom:'35px'}}>Ambur Biryany</p>
 
             <ProgressBar
@@ -23,7 +29,7 @@ const MarginComponent = () => {
             />
           </div>
 
-          <div style={{ maxWidth: '32%' }}>
+          <div style={style1}>
             <p className="text-recipe-name">Paneer Tikka Masala</p>
 
             <ProgressBar
@@ -36,7 +42,7 @@ const MarginComponent = () => {
             />
           </div>
 
-          <div style={{ maxWidth: '30%' }}>
+          <div style={style1}>
             <p className="text-recipe-name">Palak Paneer Butter Masala</p>
 
             <ProgressBar
@@ -55,7 +61,7 @@ const MarginComponent = () => {
       <MarginBar title="Low Margin Recipes">
 
         <div style={{ display: 'flex', marginLeft: '30px' }}>
-          <div style={{ maxWidth: '33%' }}>
+          <div style={style1}>
             <p className="text-recipe-name" style={{marginBottom:'35px'}}>Ambur Biryany</p>
 
             <ProgressBar
@@ -67,7 +73,7 @@ const MarginComponent = () => {
             />
           </div>
 
-          <div style={{ maxWidth: '32%' }}>
+          <div style={style1}>
             <p className="text-recipe-name">Paneer Tikka Masala</p>
 
             <ProgressBar
@@ -79,7 +85,7 @@ const MarginComponent = () => {
             />
           </div>
 
-          <div style={{ maxWidth: '30%' }}>
+          <div style={style1}>
             <p className="text-recipe-name">
               Palak Paneer Butter Masala
             </p>
@@ -99,7 +105,7 @@ const MarginComponent = () => {
       <MarginBar title="Top Fluctuating Recipes" >
 
         <div style={{ display: 'flex', marginLeft: '30px' }}>
-          <div style={{ maxWidth: '33%'}}>
+          <div style={style1}>
             <p className="text-recipe-name" style={{marginBottom:'33%'}}>
               Ambur Biryany
             </p>
@@ -110,14 +116,14 @@ const MarginComponent = () => {
 
           </div>
 
-          <div style={{ maxWidth: '32%' }}>
+          <div style={style1}>
             <p className="text-recipe-name">Paneer Tikka Masala</p>
-            <div style={{ margin:'15% 15%', backgroundColor:'lightgray', height:"2px"}} />
-
+            {/* <div style={{ margin:'15% 15%', backgroundColor:'lightgray', height:"2px"}} /> */}
+            <hr/>
             <p className="text-decrease-rate"> 2 % </p>
           </div>
 
-          <div style={{ maxWidth: '30%' }}>
+          <div style={style1}>
             <p className="text-recipe-name">Palak Paneer Butter Masala</p>
             <div style={{ margin:'15% 15%', backgroundColor:'lightgray', height:"2px"}} />
             <p className="text-decrease-rate"> 3 % </p>

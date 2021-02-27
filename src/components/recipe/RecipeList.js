@@ -5,7 +5,7 @@ import './RecipeList.css';
 import styled from 'styled-components';
 
 
-const ListContainer= styled.div`
+const ListContainer = styled.div`
   display: flex;
   flex-direction: row;
    flex-basis: 500px;
@@ -23,7 +23,7 @@ class RecipeList extends Component {
     super(props);
     this.state = {
       recipes: [],
-      activeTab: 1,
+      activeTab: 0,
       isLoading: false,
     };
 
@@ -49,7 +49,7 @@ class RecipeList extends Component {
 
 
   render() {
-    const { recipes, isLoading } = this.state;
+    const { recipes, isLoading, activeTab } = this.state;
 
     let arr = [{ id: 0, label: "ALL RECIPE(S)", query: "page=1" },
     { id: 1, label: "INCORRECT", query: "is_incorrect=false" },
@@ -61,7 +61,15 @@ class RecipeList extends Component {
 
         <div style={{ display: 'flex', flexDirection: 'row', backgroundColor: '#dce1e6' }}>
 
-          { arr.map((t, index) => <button onClick={() => this.onSelectTab(t)} className="active-tab"> {t.label} </button>)}
+          {
+            arr.map((t, index) =>
+              <button onClick={() => this.onSelectTab(t)} className="active-tab"
+                style={activeTab === t.id ?
+                  { backgroundColor: '#e6edf7', color: 'blue' } :
+                  { backgroundColor: 'white', color: 'lightgray' }}>
+                {t.label}
+              </button>)
+          }
 
         </div>
 
